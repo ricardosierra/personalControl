@@ -37,6 +37,7 @@ AppAsset::register($this);
             if (Yii::$app->user->can('admin'))
             {
                 $menuItems[] = ['label' => Yii::t('app', 'Home'), 'url' => ['/site/index']];
+                $menuItems[] = ['label' => Yii::t('app', 'Library'), 'url' => ['/library/index']];
                 $menuItems[] = ['label' => Yii::t('app', 'Users'), 'url' => ['/user/index']];
             }
             
